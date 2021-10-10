@@ -28,5 +28,6 @@ Managers can:
 ## Bonus features:
 * Automatically assign urgent when start date approach 14 days
 * Automatically sign for direct manager and department head if they did not sign in 3 days
+* Users stay logged in until they log out(even after they close the web browser, this is achieved with cookies)
 * Loading bar when html makes asynchronous call to retrieve data from database
 * Server side input validation
