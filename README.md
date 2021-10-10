@@ -32,4 +32,5 @@ Managers can:
 * Loading bar when html makes asynchronous call to retrieve data from database
 * Server side input validation
 ## Future improvement:
-* Better UX design
+* UX design optimization
+* Run time/Memory usage optimization
