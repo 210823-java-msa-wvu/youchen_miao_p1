@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color:rgb(255, 210, 0);">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+        #warning{
+            color:red;
+        }
+        .management{
+            margin: 10px;
+        }
+        .btn-primary{
+            margin:10px;
+            padding:5px;
+        }
+        fieldset{
+            background-color:rgb(255, 210, 0);
+            border:2px solid blue;
+            -moz-border-radius:8px;
+            -webkit-border-radius:8px;	
+            border-radius:8px;	
+        }
+        legend{
+            font-size:medium;
+            font-weight: bold;
+        }
+    </style>
+
+    <title>Manage your reimbursements</title>
+</head>
+<body onload="loadEmployee()" style="background-color:rgb(255, 210, 0);">
+    <section id="display"></section>
+    <section id="tables"></section>
+    <br>
+    <section id="warning" ></section>
+    <h3>What do you want to do today?</h3>
+    <div class="management">
+        <label>Reimbursement Id:
+            <input type="number" id="reimbursement_id" name="reimbursement_id">
+        </label>
+        <br>
+        <fieldset>
+            <legend>Upload info:</legend>
+        <button class="btn btn-primary" type="button" onclick="uploadInfo()" id="upload_info">Upload Additional Info</button><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Upload presentation:</legend>
+        <button class="btn btn-primary" type="button" onclick="uploadPresentation()" id="upload_presentation">Upload Presentation</button><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Upload score:</legend>
+        <label>What is your score:
+            <input type="number" id="score" name="score">
+        </label>
+        <button class="btn btn-primary" type="button" onclick="uploadScore()" id="upload_score">Upload Score</button><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Decline reimbursement: only works if benco changed the amount</legend>
+        <button class="btn btn-primary" type="button" onclick="revokeReimbursement()" id="revoke">Revoke a Reimbursement</button><br>
+        </fieldset>
+        <button class="btn btn-primary" type="button" onclick="loadEmployee()" id="refresh">Refresh Info</button>
+        <button class="btn btn-primary" type="button" onclick="redirectBack()" id="back">Back</button>
+    </div>
+    <script src="employee_manage.js"></script>
+</body>
+</html>
