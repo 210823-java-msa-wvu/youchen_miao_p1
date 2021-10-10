@@ -33,4 +33,4 @@ Managers can:
 * Server side input validation
 ## Future improvement:
 * UX design optimization
-* Run time/Memory usage optimization
+* Run time and Memory usage optimization
