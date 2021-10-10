@@ -9,6 +9,7 @@ Employees can:
 * Decline Reimbursements that has been changed by BENCO
 * Provide additional information when requested by managers
 * Provide grade achieved/presentation given for Reimbursements
+
 Managers can:
 * Request additional Info from applicant
 * Request additional Info from previously signed managers
