@@ -3,6 +3,8 @@ package servlets;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import model.Employee;
 import model.Manager;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import services.UserServices;
 
 import javax.servlet.ServletException;
@@ -14,22 +16,24 @@ import java.io.IOException;
 public class LoginServlet extends HttpServlet {
     private static final UserServices userServices = new UserServices();
     private static final ObjectMapper om = new ObjectMapper();
+    private static final Logger logger = LogManager.getLogger(LoginServlet.class);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        logger.warn("do get method invoked but not implemented.");
         super.doGet(req, resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("method: "+ req.getMethod()+" URI: "+req.getRequestURI());
+        logger.debug("method: "+ req.getMethod()+" URI: "+req.getRequestURI());
         String name = req.getParameter("name");
         String pass = req.getParameter("pass");
 
         Employee emp;
         Manager m;
 
-        System.out.println(name+"|"+pass);
         emp = userServices.employeeLogin(name,pass);
         m = userServices.managerLogin(name,pass);
         if(emp==null&&m==null){
