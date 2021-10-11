@@ -26,8 +26,8 @@ Managers can:
 * Managers can only achieve their user story on Reimbursements that they are signing, once they have signed it they lose the priviledge to request info/resign/decline a Reimbursement.
 * BENCO will be able to decline a Reimbursement in every stage unless it has already been declined or granted.
 ## Optional bonus implemented:
-* Automatically assign urgent when start date approach 14 days
 * Automatically sign for direct manager and department head if they did not sign in 3 days
+* Log4j logging
 * Users stay logged in until they log out(even after they close the web browser, this is achieved with cookies)
 * Loading bar when html makes asynchronous call to retrieve data from database
 * Input validation (on the server side)
