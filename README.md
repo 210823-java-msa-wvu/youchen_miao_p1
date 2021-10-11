@@ -31,6 +31,7 @@ Managers can:
 * Users stay logged in until they log out(even after they close the web browser, this is achieved with cookies)
 * Loading bar when html makes asynchronous call to retrieve data from database
 * Server side input validation
-## Future improvement:
-* UX design optimization
-* Run time and Memory usage optimization
+## Optional bonuses not implemented:
+* File transmission
+* Email handling
+* JUnit test
