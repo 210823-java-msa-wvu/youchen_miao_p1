@@ -25,13 +25,13 @@ Managers can:
 * Employees can only upload their grade after collecting all 3 signs from direct manager, department head, BENCO: Realistically they won't get a grade until event ends and form is supposed to be signed before event starts.
 * Managers can only achieve their user story on Reimbursements that they are signing, once they have signed it they lose the priviledge to request info/resign/decline a Reimbursement.
 * BENCO will be able to decline a Reimbursement in every stage unless it has already been declined or granted.
-## Bonus features:
+## Optional bonus implemented:
 * Automatically assign urgent when start date approach 14 days
 * Automatically sign for direct manager and department head if they did not sign in 3 days
 * Users stay logged in until they log out(even after they close the web browser, this is achieved with cookies)
 * Loading bar when html makes asynchronous call to retrieve data from database
-* Server side input validation
-## Optional bonuses not implemented:
+* Input validation (on the server side)
+## Optional bonus not implemented:
 * File transmission
 * Email handling
 * JUnit test
