@@ -35,3 +35,5 @@ Managers can:
 * File transmission
 * Email handling
 * JUnit test
+## Future improvement:
+* Better UX design
